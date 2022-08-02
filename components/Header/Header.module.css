@@ -1,0 +1,22 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem 4rem;
+    border-bottom: 1px solid black;
+    align-items: center;
+  }
+
+.header a {
+  margin: 0 2rem;
+}
+
+.selected {
+  border-bottom: 0.15rem solid #000;
+  padding-bottom: 0.2rem;
+}
+
+.header a:hover {
+  border-bottom: 0.15rem solid #000;
+  padding-bottom: 0.2rem;
+  cursor: pointer;
+}

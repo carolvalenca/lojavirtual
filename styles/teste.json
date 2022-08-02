@@ -1,0 +1,123 @@
+{
+    "title": "teste json",
+    "products": [
+        {
+            "id": 1,
+            "name": "produto 1",
+            "price": "120.6",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut consectetur dolor, a ullamcorper elit. Mauris pharetra dui et nisl cursus, sit amet posuere mauris cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer finibus tincidunt condimentum. Aliquam erat volutpat. Curabitur lacinia ipsum et nunc ornare pulvinar. Nam leo nisi, placerat sit amet mollis vitae, venenatis id lacus. Quisque nec maximus nibh, porttitor lobortis lectus.",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        },
+        {
+            "id": 2,
+            "name": "produto 2",
+            "price": "120.6",
+            "description": "produto 1 etc etc",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        },
+        {
+            "id": 3,
+            "name": "produto 3",
+            "price": "120.6",
+            "description": "produto 1 etc etc",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        },
+        {
+            "id": 4,
+            "name": "produto 4",
+            "price": "120.6",
+            "description": "produto 1 etc etc",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        },
+        {
+            "id": 5,
+            "name": "produto 5",
+            "price": "120.6",
+            "description": "produto 1 etc etc",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        },
+        {
+            "id": 6,
+            "name": "produto 6",
+            "price": "120.6",
+            "description": "produto 1 etc etc",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        },
+        {
+            "id": 7,
+            "name": "produto 7",
+            "price": "120.6",
+            "description": "produto 1 etc etc",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        },
+        {
+            "id": 8,
+            "name": "produto 8",
+            "price": "120.6",
+            "description": "produto 1 etc etc",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        },
+        {
+            "id": 9,
+            "name": "produto 9",
+            "price": "120.6",
+            "description": "produto 1 etc etc",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        },
+        {
+            "id": 10,
+            "name": "produto 10",
+            "price": "120.6",
+            "description": "produto 1 etc etc",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        },
+        {
+            "id": 11,
+            "name": "produto 11",
+            "price": "120.6",
+            "description": "produto 1 etc etc",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        },{
+            "id": 12,
+            "name": "produto 12",
+            "price": "120.6",
+            "description": "produto 1 etc etc",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        },
+        {
+            "id": 13,
+            "name": "produto 13",
+            "price": "120.6",
+            "description": "produto 1 etc etc",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        },
+        {
+            "id": 14,
+            "name": "produto 14",
+            "price": "120.6",
+            "description": "produto 1 etc etc",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        },
+        {
+            "id": 15,
+            "name": "produto 15",
+            "price": "120.6",
+            "description": "produto 1 etc etc",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        },
+        {
+            "id": 16,
+            "name": "produto 16",
+            "price": "120.6",
+            "description": "produto 1 etc etc",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        },
+        {
+            "id": 17,
+            "name": "produto 17",
+            "price": "120.6",
+            "description": "produto 1 etc etc",
+            "image": "https://img.lojasrenner.com.br/item/669059881/zoom/12.jpg"
+        }
+    ]
+}
