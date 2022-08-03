@@ -68,7 +68,6 @@ export default function Details() {
                 <button>XL</button>
               </div>
               <button onClick={() => setCartProducts([...cartProducts, product])}>Adicionar ao carrinho</button>
-              <p>{cartProducts.length}</p>
             </div>
           </div>
         </section>
