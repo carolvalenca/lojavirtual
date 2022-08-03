@@ -132,6 +132,40 @@
   /* justify-items: center; */
 }
 
+.sizeButton {
+  background: none;
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 0.5rem 0.7rem;
+  width: 3rem;
+  font-weight: bold;
+}
+
+.sizeButton:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.sizeSelected {
+  background-color: black;
+  color: white;
+}
+
+.addToCartButton {
+  background: none;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.addToCartButton:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

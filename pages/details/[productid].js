@@ -15,7 +15,8 @@ export default function Details() {
   const { productid } = router.query;
 
   const [product, setProduct] = useState({});
-  const [cartProducts, setCartProducts] = useContext(CartContext)
+  const [cartProducts, setCartProducts] = useContext(CartContext);
+  const [selected, setSelected] = useState();
 
   useEffect(() => {
     const product = teste.products.filter((product) => product.id == productid);
@@ -58,16 +59,72 @@ export default function Details() {
               }}
             >
               <h2>{product.name}</h2>
-              <span>{product.description}</span>
-              <span>R$ {product.price && colocarVirgula(product.price)}</span>
-              <div>
-                <button>XS</button>
-                <button>S</button>
-                <button>M</button>
-                <button>L</button>
-                <button>XL</button>
+              <span style={{color: 'gray'}}>{product.description}</span>
+              <span
+                style={{
+                  marginTop: '1rem',
+                  fontWeight: 'bold',
+                  fontSize: '1.5rem',
+                }}
+              >
+                R$ {product.price && colocarVirgula(product.price)}
+              </span>
+              <div
+                style={{
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  width: '80%',
+                  alignSelf: 'center',
+                  margin: '2rem 0',
+                }}
+              >
+                <button
+                  className={`${styles.sizeButton} ${
+                    selected === 'XS' && styles.sizeSelected
+                  }`}
+                  onClick={() => setSelected('XS')}
+                >
+                  XS
+                </button>
+                <button
+                  className={`${styles.sizeButton} ${
+                    selected === 'S' && styles.sizeSelected
+                  }`}
+                  onClick={() => setSelected('S')}
+                >
+                  S
+                </button>
+                <button
+                  className={`${styles.sizeButton} ${
+                    selected === 'M' && styles.sizeSelected
+                  }`}
+                  onClick={() => setSelected('M')}
+                >
+                  M
+                </button>
+                <button
+                  className={`${styles.sizeButton} ${
+                    selected === 'L' && styles.sizeSelected
+                  }`}
+                  onClick={() => setSelected('L')}
+                >
+                  L
+                </button>
+                <button
+                  className={`${styles.sizeButton} ${
+                    selected === 'XL' && styles.sizeSelected
+                  }`}
+                  onClick={() => setSelected('XL')}
+                >
+                  XL
+                </button>
               </div>
-              <button onClick={() => setCartProducts([...cartProducts, product])}>Adicionar ao carrinho</button>
+              <button
+                className={styles.addToCartButton}
+                onClick={() => setCartProducts([...cartProducts, product])}
+              >
+                Adicionar ao carrinho
+              </button>
             </div>
           </div>
         </section>
