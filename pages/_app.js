@@ -1,14 +1,11 @@
 import '../styles/globals.css'
-import CartContext from '../context'
-import { useState } from 'react'
+import CartContext, { CartProvider } from '../context'
 
 function MyApp({ Component, pageProps }) {
-  const [cartProducts, setCartProducts] = useState([]);
-
   return (
-    <CartContext.Provider value={[cartProducts, setCartProducts]}>
+    <CartProvider>
       <Component {...pageProps} />
-    </CartContext.Provider>
+    </CartProvider>
   )
 }
 

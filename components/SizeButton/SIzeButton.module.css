@@ -1,0 +1,19 @@
+.sizeButton {
+    background: none;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: 0.5rem 0.7rem;
+    width: 3rem;
+    font-weight: bold;
+}
+
+.sizeButton:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.sizeSelected {
+    background-color: black;
+    color: white;
+}

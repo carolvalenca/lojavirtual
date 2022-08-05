@@ -1,0 +1,13 @@
+.container {
+    padding: 0;
+}
+
+.mainContent {
+    padding: 1rem 4rem;
+}
+
+@media (max-width: 430px) {
+    .mainContent {
+        padding: 1rem 1rem;
+    }
+}

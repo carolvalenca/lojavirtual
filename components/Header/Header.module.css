@@ -28,6 +28,70 @@
   background-color: black;
   color: white;
   font-size: 0.8rem;
-  padding: 0.1rem 0.3rem;
-  border-radius: 1rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 100%;
+}
+
+.pageLogo {
+  font-family: 'Satisfy', cursive;
+}
+
+.linksContainer {
+  justify-self: center;
+}
+
+.hbmenu {
+  display: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip.active .tooltiptext {
+  visibility: visible;
+}
+
+@media (max-width: 780px) {
+  .pageLogo {
+    justify-self: center;
+  }
+
+  .linksContainer {
+    display: none;
+  }
+
+  .hbmenu {
+    display: block;
+  }
+}
+
+@media (max-width: 560px) {
+  .pageLogo {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .header {
+    padding: 2rem 1rem;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
 }

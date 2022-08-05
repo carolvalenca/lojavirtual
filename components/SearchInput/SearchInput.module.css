@@ -1,0 +1,26 @@
+.searchInputContainer {
+    position: relative;
+    border-bottom: 0.5px solid #dedede;
+    display: flex;
+    align-items: center;
+}
+
+.searchInput {
+    border: none;
+    padding: 0.5rem 1rem;
+    padding-left: 2.1rem;
+    border: 0;
+    width: 100%;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 0.4rem;
+}
+
+@media (max-width: 500px) {
+    .searchInputContainer {
+        width: 100%;
+        margin-top: 2rem;
+    }
+  }

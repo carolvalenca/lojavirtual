@@ -1,25 +1,40 @@
 import styles from './Header.module.css';
 import { TbShoppingCart } from "react-icons/tb";
-import CartContext from '../../context';
-import { useContext } from 'react';
+import { GiHamburgerMenu } from "react-icons/gi";
+import {CartContext} from '../../context';
+import { useContext, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 export default function Header() {
-  const [cartProducts] = useContext(CartContext)
+  const {quantityCartProducts} = useContext(CartContext)
   const router = useRouter();
 
   return (
     <header className={styles.header}>
-      <h1>Loja Virtual</h1>
-      <div style={{ justifySelf: 'center' }}>
-        <a className={`${router.pathname === '/about' && styles.selected}`}>Novos</a>
-        <a>Coleções</a>
-        <a>Marcas</a>
+      <GiHamburgerMenu size={35} className={styles.hbmenu} />
+      <h1 className={styles.pageLogo}>Loja Virtual</h1>
+      <div className={styles.linksContainer}>
+        <Link href='/'>
+          <a className={`${router.pathname === '/' && styles.selected}`}>
+            NOVOS
+          </a>
+        </Link>
+        <a>COLEÇÕES</a>
+        <a>MARCAS</a>
       </div>
       <Link href='/cart'>
-        <div style={{ justifySelf: 'flex-end', position: 'relative', padding: '0.4rem 0.45rem' }}>
-          <span className={styles.productsQuantity}>{cartProducts.length}</span>
+        <div
+          style={{
+            justifySelf: 'flex-end',
+            position: 'relative',
+            padding: '0.4rem 0.45rem',
+          }}
+          data-tip='teste'
+        >
+          <span className={styles.productsQuantity}>
+            {quantityCartProducts}
+          </span>
           <TbShoppingCart size={24} />
         </div>
       </Link>
