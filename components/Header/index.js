@@ -17,7 +17,7 @@ export default function Header() {
       <div className={styles.linksContainer}>
         <Link href='/'>
           <a className={`${router.pathname === '/' && styles.selected}`}>
-            NOVOS
+            PRODUTOS
           </a>
         </Link>
         <a>COLEÇÕES</a>
@@ -25,12 +25,12 @@ export default function Header() {
       </div>
       <Link href='/cart'>
         <div
+          data-test-id='cartButton'
           style={{
             justifySelf: 'flex-end',
             position: 'relative',
             padding: '0.4rem 0.45rem',
           }}
-          data-tip='teste'
         >
           <span className={styles.productsQuantity}>
             {quantityCartProducts}

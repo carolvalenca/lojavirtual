@@ -16,10 +16,14 @@ export default function Details() {
 
   const [product, setProduct] = useState({});
   const { addProductCart } = useContext(CartContext);
-  const [selected, setSelected] = useState();
+  const [selectedSize, setSelectedSize] = useState();
+
+  const sizes = ['XS', 'S', 'M', 'L', 'XL'];
 
   useEffect(() => {
-    const product = productsData.products.filter((product) => product.id == productid);
+    const product = productsData.products.filter(
+      (product) => product.id == productid
+    );
     setProduct(product[0]);
   }, [productid]);
 
@@ -31,35 +35,27 @@ export default function Details() {
         <img
           src={product.image}
           alt='product image'
-          style={{
-            width: '27rem',
-            height: 'auto',
-            borderRadius: '1rem',
-            justifySelf: 'flex-end',
-          }}
+          className={styles.productImg}
         />
         <div className={styles.productDescription}>
           <h2>{product.name}</h2>
           <span style={{ color: 'gray' }}>{product.description}</span>
-          <span
-            style={{
-              marginTop: '1rem',
-              fontWeight: 'bold',
-              fontSize: '1.5rem',
-            }}
-          >
+          <span className={styles.productPrice}>
             R$ {product.price && colocarVirgula(product.price)}
           </span>
           <div className={styles.sizesButtonsContainer}>
-            <SizeButton label='XS' selectedSize={selected === 'XS'} setSelectedSize={() => setSelected('XS')}/>
-            <SizeButton label='S' selectedSize={selected === 'S'} setSelectedSize={() => setSelected('S')}/>
-            <SizeButton label='M' selectedSize={selected === 'M'} setSelectedSize={() => setSelected('M')}/>
-            <SizeButton label='L' selectedSize={selected === 'L'} setSelectedSize={() => setSelected('L')}/>
-            <SizeButton label='XL' selectedSize={selected === 'XL'} setSelectedSize={() => setSelected('XL')}/>
+            {sizes.map((size, index) => (
+              <SizeButton
+                key={index}
+                label={size}
+                selectedSize={selectedSize === size}
+                setSelectedSize={() => setSelectedSize(size)}
+              />
+            ))}
           </div>
           <button
             className={styles.addToCartButton}
-            onClick={() => addProductCart({ ...product, size: selected })}
+            onClick={() => addProductCart({ ...product, size: selectedSize })}
           >
             Adicionar ao carrinho
           </button>

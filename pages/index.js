@@ -18,10 +18,9 @@ export default function About() {
   }
 
   return (
-    <Layout pageTitle='about'>
-      <ToastContainer />
+    <Layout pageTitle='main'>
       <div className={styles.titleContainer}>
-        <h3 style={{ margin: 0 }}>Novos</h3>
+        <h3>Produtos</h3>
         <SearchInput searchByName={searchByName}/>
       </div>
       <div className={styles.teste}>

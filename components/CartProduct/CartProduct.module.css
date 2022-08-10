@@ -1,3 +1,39 @@
+.cartProductContainer {
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 0.4rem;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.cartProductImg {
+    width: 10rem;
+    height: 10rem;
+}
+
+.cartProductInfoContainer {
+    flex-grow: 1;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cartProductInfoHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartProductInfoHeader h3 {
+    margin: 0;
+}
+
+.cartProductInfoHeader button {
+    background: none; 
+    border: none; 
+    cursor: pointer;
+}
+
 .priceContainer {
     display: flex; 
     align-items: center; 
