@@ -33,7 +33,7 @@ export default function Details() {
       <BackButton />
       <div className={styles.productInfo}>
         <img
-          src={product.image}
+          src={product && product.image}
           alt='product image'
           className={styles.productImg}
         />

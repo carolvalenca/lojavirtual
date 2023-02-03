@@ -1,4 +1,4 @@
-import styles from './SizeButton.module.css';
+import styles from './SB.module.css';
 
 export default function SizeButton({ label, selectedSize, setSelectedSize }) {
   return (

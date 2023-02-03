@@ -1,13 +1,19 @@
 import styles from '../styles/Home.module.css';
 import productsData from '../data/productsData.json';
 import ProductCard from '../components/ProductCard';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 import { ToastContainer } from 'react-toastify';
 import SearchInput from '../components/SearchInput';
 
 export default function About() {
   const [products, setProducts] = useState(productsData.products);
+
+  useEffect(() => {
+    fetch('https://jsonplaceholder.typicode.com/posts/1')
+      .then((response) => response.json())
+      .then((json) => console.log(json));
+  })
 
   function searchByName(filter) {
     let arr = [];
